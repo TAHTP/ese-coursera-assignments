@@ -9,32 +9,74 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Declarations for array statistical analytics
  *
- * <Add Extended Description Here>
+ * This file contains the function prototypes and documentation
+ * for the maximum, minimum, mean, and median analytics assignment.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
- *
+ * @author Ngo Tuan Anh
+ * @date 05/20/2026
  */
+
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief Print the statistics of an array including max, min, mean, median
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return None
+ */
+void print_statistics(unsigned char *ptr, unsigned int size);
 
 /**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @brief Print the array to the screen
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return None
+ */
+void print_array(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Find the median value of the array
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return Median value
+ */
+unsigned char find_median(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Find the mean value of the array
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return Mean value
+ */
+unsigned char find_mean(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Find the maximum value of the array
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return Maximum value
+ */
+unsigned char find_maximum(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Find the minimum value of the array
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return Minimum value
+ */
+unsigned char find_minimum(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Sort the array from largest to smallest
+ * @param ptr Pointer to data array
+ * @param size Size of array
+ * @return None
  */
 
+void sort_array(unsigned char *ptr, unsigned int size);
 
 #endif /* __STATS_H__ */

@@ -41,3 +41,31 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+
+void print_statistics(unsigned char *ptr, unsigned int size) {
+  /* Khung trong - Chờ viet logic o Giai doan 3 */
+}
+
+void print_array(unsigned char *ptr, unsigned int size) {
+  /* Khung trong - Chờ viet logic o Giai doan 3 */
+}
+
+unsigned char find_median(unsigned char *ptr, unsigned int size) {
+  return 0; /* Tra ve tam so 0 de khong bi loi bien dich */
+}
+
+unsigned char find_mean(unsigned char *ptr, unsigned int size) {
+  return 0; /* Tra ve tam so 0 de khong bi loi bien dich */
+}
+
+unsigned char find_maximum(unsigned char *ptr, unsigned int size) {
+  return 0; /* Tra ve tam so 0 de khong bi loi bien dich */
+}
+
+unsigned char find_minimum(unsigned char *ptr, unsigned int size) {
+  return 0; /* Tra ve tam so 0 de khong bi loi bien dich */
+}
+
+void sort_array(unsigned char *ptr, unsigned int size) {
+  /* Khung trong - Chờ viet logic o Giai doan 3 */
+}
