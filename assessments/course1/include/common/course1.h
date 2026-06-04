@@ -126,6 +126,8 @@ int8_t test_memset();
  * @return void
  */
 int8_t test_reverse();
-
+uint8_t * my_memset(uint8_t * src, size_t length, uint8_t value);
+uint8_t * my_memzero(uint8_t * src, size_t length);
+uint8_t * my_reverse(uint8_t * src, size_t length);
 #endif /* __COURSE1_H__ */
 

@@ -21,7 +21,8 @@
 
 #ifndef __STATS_H__
 #define __STATS_H__
-
+#include <stdint.h>
+#include <stddef.h>
 /**
  * @brief Print the statistics of an array including max, min, mean, median
  * @param ptr Pointer to data array
@@ -36,7 +37,7 @@ void print_statistics(unsigned char *ptr, unsigned int size);
  * @param size Size of array
  * @return None
  */
-void print_array(unsigned char *ptr, unsigned int size);
+void print_array(uint8_t * array, size_t length) ; 
 
 /**
  * @brief Find the median value of the array

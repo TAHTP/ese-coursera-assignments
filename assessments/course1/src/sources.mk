@@ -16,7 +16,8 @@ SOURCES = interrupts_msp432p401r_gcc.c \
         startup_msp432p401r_gcc.c \
         system_msp432p401r.c \
         course1.c \
-        stats.c 
+        stats.c \
+        data.c 
 
 # Add your include paths to this variable
 INCLUDES = -I../include/common \

@@ -27,7 +27,7 @@ include sources.mk
 PLATFORM =HOST  
 CFLAGS = -g  -Wall -std=c99 
 LDFLAGS = -Wl,-Map=c1m2.map 
-CPPFLAGS= -D$(PLATFORM)  $(INCLUDES)
+CPPFLAGS= -D$(PLATFORM)  $(INCLUDES)  -DCOURSE1 -DVERBOSE 
 OBJS = $(SOURCES:.c=.o) 
 ifeq ($(PLATFORM),MSP432)
      LINKER_FILE =../msp432p401r.lds 
@@ -40,7 +40,7 @@ ifeq ($(PLATFORM),MSP432)
      LD = arm-none-eabi-ld
 else 
     CC = gcc 
-    SOURCES=main.c memory.c
+    SOURCES=main.c memory.c course1.c data.c  stats.c 
 endif 
 %.i: %.c
 	$(CC) -E $< -o $@ $(CPPFLAGS) $(CFLAGS) 
